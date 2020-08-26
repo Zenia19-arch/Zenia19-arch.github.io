@@ -1,0 +1,984 @@
+* {
+    margin: 0;
+    padding : 0;
+    color: #fff;
+    box-sizing: border-box;
+    /*font-family: 'Kaushan Script', cursive;*/
+}
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;   /*Нужно чтобы "header_logo" было справо*/
+    justify-content: space-between;/*А "nav_logo" было слево*/
+    align-items: center;/*Нужно чтобы "header_logo" и "nav_logo" выровнять между собой(сделать немного отступы сверху) */
+    
+    padding: 22px 0 15px;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/MoGo_FREE_Template_by_Laaqiq_01.jpg);
+    background-size: cover;/* устанавливает изобр. не зависимо от % экрана */
+}
+
+.header_logo {
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 120px;
+}
+
+.nav {
+    font-size: 14px;
+}
+
+.nav_logo {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: color 0.2s linear; /*Плавный переход на желтый цвет ссылки*/
+    margin: 0 15px;/*Отступы от слов*/
+    position: relative;/*Нужно,чтобы элементы не находились друг под другом*/
+}
+
+.nav_logo:hover {
+    color : #fce38a;
+}
+
+.nav_logo:after {
+    content: "";/*Нужно, чтобы появились линии под словами*/
+    display: none;/*Нужно, чтобы линия появлялась только при наводе на ссылку*/
+    width: 100%;
+    height: 2px;
+    position: absolute;/*Как и в .nav_logo "position: relative;"(Нужно чтобы элементы не находились друг под другом)*/
+    background-color: #fce38a;/*Цвет линии под словом*/
+    top:100%;
+    left: 0;/*Нужно ,чтобы линии находились конкретно под словами*/
+}
+
+.nav_logo:hover:after {
+    display: block;
+}
+
+.center {
+    width:100%;
+    max-width: 600px; /*Нужно, чтобы WELCOME и TO MOGO находились в разных строчках*/
+    margin: 0 auto ; 
+    padding-top: 140px;/*Опускаем текст вниз*/
+    text-align: center;/*Выравнием каждые элемент блока по центру*/
+}
+
+.center_logo_1 {
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.center_logo {
+    font-size: 100px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 1px 0;
+}
+.center_logo:after {
+    content: "";/*Создаем линию*/
+    display: block;/*Создаем линию*/
+    width: 60px;
+    height: 3px;
+    background-color: #fff;
+    margin: 15px auto 50px; /*Выравниваем по центру и даем отступ(15px от MOGO до полоски, а 50px от полоски до Learn More)*/
+} 
+
+.bottom {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: top;/*для вертикального выравнивания */
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 7px 20px ;/*Размер рамки*/
+}
+
+.bottom:hover {
+    background-color: #fff;
+    color:#333;
+    transition: background 0.2s linear,color 0.2s linear;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin:0 auto ;/*Выравнивание по центру*/
+    margin-top: 6.5%;/*Нужно ,чтобы запись была внизу страницы*/
+    
+}
+
+.slider_num {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.slider_item {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding-top: 15px;/*Отступ между линией и словом*/
+    border-top: 2px solid white ;
+    opacity: 0.7;/*Прозрачность слова и цифры*/
+    
+}
+
+.slider_item_1_opacity {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    border-top: 2px solid white ;
+    padding-top: 15px;
+    opacity: 1;
+}
+
+.section_header {
+    margin: 25px auto 40px; /*Отступы от верхнего края блока intro*/
+    text-align: center;
+    width: 100%;
+    max-width: 850px;
+    
+}
+
+.section_suptitle {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 18px;
+    color:#333;
+    margin-bottom: 10px;
+}
+
+.section_title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.section_title:after {
+    content: "";
+    display: block;
+    background-color: #de8076;
+    width: 60px;
+    height: 3px;
+    margin: 28px auto 32px; 
+}
+
+.section_text p{
+    font-family: 'Roboto', sans-serif;
+    color: #999;
+    font-size: 15px;
+    margin-bottom: 28px;
+}
+
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto 70px;
+    width: 70%;
+    max-width: 950px;/*Растояние между фотками*/
+}
+
+.about_item {
+    background: linear-gradient(to bottom,#e57e7e ,#ead183 );/*Задний фон этот цвет*/
+    position: relative;
+}
+
+.about_img {
+    transition: transform 0.2s linear;/*Плавное смещение при наводе на фото*/
+}
+
+.about_img_img {
+    display: block;
+}
+
+
+.about_img:hover  {
+    opacity: 0.8;
+    transform: translate3d(-5px,-5px,0);/*Плавное смещение при наводе на фото*/
+}
+
+.statistics {
+    background-color: #95e1d3;
+    height: 200px;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto ;
+    text-align: center;
+}
+
+.stat_count {
+    font-size: 65px;
+    font-weight: 900;
+    float: right;
+}
+
+.stat_item {
+    width: 20%;
+    border-left: 1px solid #b5eae0;
+    height: 200px;
+    padding: 50px 60px;
+    line-height: 1;/*Текст прижмется к цифрам*/
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.stat_item:last-child {
+    border-right: 1px solid #b5eae0;
+}
+
+.stat_text {
+    font-size: 16px;
+    float: right;
+}
+
+
+.skills_1 {
+    text-align: left;
+}
+
+.skills_about_1 {
+    display: flex;
+    justify-content: center;
+/*    margin: -20px 276px ;*/
+    width: 100%;
+    max-width: 1100px;
+    height: 120px;
+    margin: -20px auto ;/**/
+}
+
+.skills_photo {
+    max-width: 10px;
+    margin-top: 5px;
+    
+}
+
+.skills_item {
+    color:#333;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 242.5px;
+    color: #b3b3b3;
+    font-size: 15px;
+    
+}
+
+.skills_item_about {
+    color:#333;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 16px;
+    
+}
+
+
+.skills_1:after {
+    content: "";
+    display: block;
+    justify-content: center;
+    background-color: #e5e5e5;
+    height: 1px;
+    width: 1030px;
+/*    margin-left: 275px;*/
+    margin:10px auto 0 207px;
+}
+
+
+.skills_about_2 {
+    padding-top: 39px; 
+    display: flex;
+    justify-content: center;
+/*    margin: -5px 276px ;*/
+    width: 100%;
+    max-width: 1100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.section_2 {
+    margin-bottom: 90px;
+}
+
+.devices {
+    width: 100%;
+    height: 100vh; background:url(../images/Devices/MoGo_FREE_Template_by_Laaqiq_02.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+
+.section_header_1 {
+    margin: 21px auto 40px; /*Отступы от верхнего края блока */
+    text-align: center;
+    width: 100%;
+    max-width: 850px;
+}
+.gadget {
+
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    max-height: 30em;
+
+    
+    position: absolute;
+    
+}
+
+.devices_Ipad {
+    margin-left: 1em;
+    
+}
+
+.devices_Iphone {
+    bottom:24.5em;
+    left: 15em;
+    position: relative;
+}
+
+.service_section_header {
+    margin: 40px auto ;
+}
+/*---------*/
+
+.services_icon_item {
+    display: flex;
+}
+
+.space {
+   width: 90%; 
+   display: flex;
+}
+
+.photo {
+    width: 265%;
+    display: block;
+    justify-content: center;
+    padding-left: 10em;
+}
+
+.icon {
+    display: flex;
+    width: 100%;
+    height: 62.5px;
+    padding-right: 30px;
+    border: 1px solid #e5e5e5;
+}
+
+.icon_item {
+    width: 12%;
+    padding-top: 1em;
+    padding-left: 1.1em;
+}
+
+.icon_text {
+    width: 25%;
+    max-width: 200px;
+    display: block;
+    justify-content: center;
+    margin-top: 1.4em;
+    padding-left: 1em;
+}
+
+.icon_icon {
+    display: block;
+    padding-left: 22em;
+    margin-top: 1.4em;
+}
+
+.services_icon_text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color:#333;
+    font-weight: 600;
+}
+
+.icon_1 {
+    display: flex;
+    width: 100%;
+    height: 155px;
+    padding-right: 30px;
+    border: 1px solid #e5e5e5;
+}
+
+.icon_item_1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color:#b6b6b6;
+    line-height:1.3em;
+}
+
+.icon_item_1 {
+    padding-left: 1em;
+    padding-top: 1em;
+}
+/*-------------*/
+.moto_jondoe {
+    width: 100%;
+    height: 250px;
+    background-color: #f8f8f8;
+    margin-top: 6em;
+}
+
+.image_moto {
+    display: flex;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 1.8em;
+}
+
+.img_right_photo {
+    margin-right: 3em;
+}
+
+.moto_text p q{
+    color: #999;
+    line-height:2em;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-style:oblique;
+    width: 100%;
+    max-width: 1220px;
+}
+
+.athor_text {
+    width: 100%;
+    max-width: 150px;
+    height: 20%;
+    min-height: 20px;
+    text-align: right;
+    margin-left: -25px;
+}
+
+.athor_moto {
+    width: 100%;
+    max-width: 200px;
+    height: 30%;
+    min-height: 20px;
+    padding-top: 1.2em;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 600;
+    color:#646464;
+    font-size: 18px;
+    position: relative;
+}
+
+
+.text_size:after {
+    content: "";
+    display: flex;
+    position: absolute;
+    background-color: #f38181;
+    height: 2px;
+    width: 55px;
+    margin-top: 35px;
+}
+
+.team_size {
+    display: flex;
+    background: linear-gradient(to bottom,#e57e7e ,#ead183 );
+    
+}
+
+.img_team {
+    transition: transform 0.2s linear;
+    display: block;
+}
+
+.img_team:hover {
+    opacity: 0.8;
+    transform: translate3d(-5px,-5px,0);
+}
+
+.name_name_name {
+    width: 100%;
+    max-width: 510px;
+    text-align: center;
+}
+
+.name_team {
+    display: flex;
+    width: 100%;
+    max-width: 510px;  
+}
+
+.name_name {
+    color:#333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    max-width: 510px;
+    text-transform: uppercase;
+}
+
+.name_prof {
+    font-family: 'Roboto', sans-serif;
+    color:#c3c3c3;
+    font-size: 14px;
+    width: 100%;
+    max-width: 510px;
+    height: 10%;
+    max-height: 20px;
+    margin-top: -15px;
+}
+
+
+.barber_hipster {
+    width: 100%;
+    height: 200px;
+    background-color: #f8f8f8;
+    margin-top: 6em;
+    
+}
+
+.barber_img {
+    margin-top: 1em;
+}
+
+/**/
+
+.works_container {
+    display: flex;
+    
+}
+
+
+.works_size {
+    width: 50%;
+}
+
+.works_size_1 {
+    width: 50%;
+    position: relative;
+    background: linear-gradient(to bottom,#e57e7e ,#ead183 );
+}
+
+.works_img {
+    position: relative;
+    height: 19.2em;
+    background: linear-gradient(to bottom,#e57e7e ,#ead183 );
+}
+
+.works_img:hover .img_works {
+    opacity: 0.2;
+    transform: translate3d(-1px,-1px,0);
+}
+
+.img_works {
+    width: 100%;
+    height: 19.2em;
+    transition: transform 0.2s linear;
+}
+
+.img_works_1 {
+    height: 100%;
+    max-height: 615px;
+    width: 100%;
+    transition: transform 0.2s linear;
+    display: block;
+}
+
+.works_size_1:hover .img_works_1{
+    opacity: 0.2;
+    transform: translate3d(-1px,-1px,0);
+}
+
+.img_logs {
+    position: absolute;
+    top: 47%;
+    text-align: center;
+    opacity: 0;
+    width: 100%;
+}
+
+.works_img:hover .img_logs {
+    opacity: 1;
+}
+
+.works_size_1:hover .img_logs {
+    opacity: 1;
+}
+
+.works_title_1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color:#fcf0e7;
+    padding-bottom: 10px;
+}
+
+.works_title_2 {
+    font-family: 'Roboto', sans-serif;
+    color:#fcf0e7;
+    font-size: 14px;
+}
+/*--------------*/
+.moto_jondoe_1 {
+    width: 100%;
+    height: 250px;
+    margin-top: 5em;
+}
+
+.image_moto_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.img_right_photo_1 {
+    margin-right: 3em;
+}
+
+
+
+.moto_text_1 p q{
+    color: #999;
+    line-height:2em;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-style:oblique;
+    width: 100%;
+    max-width: 1220px;
+}
+
+.athor_text_1 {
+    width: 100%;
+    max-width: 250px;
+    height: 20%;
+    min-height: 20px;
+    text-align: right;
+    margin-left: -25px;
+}
+
+.athor_moto_1 {
+    width: 100%;
+    max-width: 190px;
+    height: 30%;
+    min-height: 20px;
+    padding-top: 1.2em;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 600;
+    color:#646464;
+    font-size: 18px;
+    position: relative;
+}
+
+.text_size_1 {
+    padding-top: 1.8em;
+}
+
+
+.text_size_1:after {
+    content: "";
+    display: flex;
+    position: absolute;
+    background-color: #f38181;
+    height: 3px;
+    width: 55px;
+    margin-top: 35px;
+}
+
+.section_intro_1 {
+    margin-top: 5em;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/MoGo_FREE_Template_by_Laaqiq_02.png) no-repeat;
+    background-size: cover;
+}
+
+.clients_size {
+    display: flex;
+    width: 47%;
+}
+
+.clients_img {
+    padding-right: 2em;
+}
+
+.clients_info {
+    line-height: 1.8;
+    max-width: 450px;
+}
+
+.section_suptitle_1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.section_title_1 {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.section_title_1:after {
+    content: "";
+    display: block;
+    background-color: #de8076;
+    width: 60px;
+    height: 3px;
+    margin: 20px 0;
+}
+.section_text_1 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999;
+    
+}
+
+.story_size {
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;/**/
+}
+
+.story_size_1 {
+    width: 100%;
+    display: flex;
+    padding-bottom: 6em;
+}
+
+.story_1 {
+    flex: 1 1 0;
+    padding-right: 20px;
+}
+
+.story_2 {
+    flex: 1 1 0;
+    margin: -25px auto;
+}
+
+.story_info {
+    padding-top: 10px;
+    width: 100%;
+    max-width:400px;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+
+.story_title_1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.story_title_2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #999;
+}
+
+.story_1:after {
+    content: "";
+    display: block;
+    justify-content: center;
+    background-color: #e5e5e5;
+    height: 1px;
+    width: 100%;
+}
+
+.story_1 {
+    position: relative;
+}
+
+.story_kal {
+    position: absolute;
+    top: 45%;
+    margin-left: -0.6em;
+    z-index: 1;
+}
+
+/**/
+
+.map {
+    width: 100%;
+    background: url(../images/Map/MoGo_FREE_Template_by_Laaqiq_02.png);
+    background-size: cover;
+    height: 100%;
+    max-height: 200px;
+    height: 100vh;
+}
+
+.section_title_2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #f38181;
+}
+
+.section_title_2:after {
+    content: "";
+    display: block;
+    background-color: #f38181;
+    width: 60px;
+    height: 3px;
+    margin: 28px auto 32px; 
+}
+
+.fas {
+    color: #f38181;
+    font-size: 25px;
+}
+/**/
+
+.last_section {
+    background-color: #f8f8f8;
+}
+
+.LAST_size {
+    display: flex;
+}
+
+.mogo_info {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #ccc;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.last_last_size {
+    width: 100%;
+}
+
+.last_size p{
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #999;
+}
+
+.INFO_followers {
+    display: flex;
+    padding-top: 20px;
+}
+
+.mogo_liczba {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #333;
+    padding-right: 5px;
+}
+
+.mogo_follow {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.last_size:after{
+    margin-top: 10px;
+    content: "";
+    display: block;
+    justify-content: center;
+    background-color: #e5e5e5;
+    height: 2px;
+    width: 80%;
+}
+
+
+
+.INFO_social {
+    padding-top: 10px;
+    display: flex;
+}
+
+.mogo_follow_us {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #a5a5a5;
+    padding-right: 20px;
+}
+
+.fab {
+    color: #95e1d3;
+    font-size: 15px;
+    padding-right: 15px;
+}
+
+.INFO_email {
+    padding-top: 25px;
+    display: flex;
+     padding-bottom: 45px;
+}
+
+.mogo_email {
+    width: 220px;
+    height: 40px;
+    border: 1px solid #a5a5a5;
+    color: #333;
+    font-style: oblique;
+}
+
+
+.mogo_subscribe {
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    border: 1px solid #95e1d3;
+    font-size: 15spx;
+}
+
+.mogo_subscribe:hover {
+    opacity: 0.7; 
+}
+
+.mogo_info_1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.final_img {
+    padding-bottom: 11px;
+    display: flex;
+}
+
+.final_info {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.final_suptitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.final--title p{
+    padding-top: 12px;
+    color:#ababab;
+}
+
