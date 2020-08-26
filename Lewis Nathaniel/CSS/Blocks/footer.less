@@ -1,0 +1,75 @@
+// main: ../style.less
+
+.footer {
+    background-color: @black;
+
+}
+
+.footer__inner {
+    width: 100%;
+    padding: 1.5rem 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__left{
+    display: flex;
+    width: 50%;
+    color: @white;
+
+    align-items: center;
+}
+
+.footer__right {
+    width: 50%;
+    text-align: right;
+
+}
+
+.footer__temp {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: @grey;
+}
+
+.footer__icon{
+    padding-left: 1.5rem;
+
+}
+
+.footer__img {
+    color: @grey;
+
+}
+
+.footer__header{
+    text-decoration: none;
+    color:@grey;
+    text-transform: uppercase;
+
+
+    padding-left: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    &:hover{
+        color: @grey-light;
+
+    }
+
+}
+
+.btn_border {
+    margin-left: 1rem;
+    border: 2px solid @grey;
+    border-radius: 20px;
+    padding: 0.6rem 2rem;
+    &:hover{
+        transition: background-color 0.3s linear;
+        transition: color 0.2s linear;
+        background-color: @grey;
+        color: @white;
+    }
+}

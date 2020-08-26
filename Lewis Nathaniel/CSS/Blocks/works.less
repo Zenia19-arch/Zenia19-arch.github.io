@@ -1,0 +1,78 @@
+// main: ../style.less
+
+.works{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0 -3rem;
+}
+
+.works__size {
+    width: 33.33333%;
+    padding: 3rem;
+
+}
+
+.wors__show {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px fade(#000,14%);
+
+    &:hover{
+        transition: box-shadow 0.2s linear;
+        box-shadow: 0 0 10px fade(#000,40%);
+    }
+}
+
+.works__img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.works__text {
+
+    padding: 1rem 0.8rem 0.9rem 1rem;
+}
+
+.works__title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.works__subtitle {
+    display: flex;
+
+    padding-top: 0.4rem;
+    justify-content: space-between;
+}
+
+.works__project {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.works__time{
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.works__button {
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.works__btn {
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 1rem 1.5rem;
+
+    color: @black;
+    text-decoration: none;
+}

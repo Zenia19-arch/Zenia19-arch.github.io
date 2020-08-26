@@ -1,0 +1,129 @@
+// main: ../style.less
+
+.intro__left {
+    padding-top: 80px;
+
+    border-bottom: 1px solid fade(@grey,30%);
+}
+
+.intro__name_1 {
+    font-size: 3.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+
+}
+
+.intro__name_2 {
+    font-size: 4.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.intro__prof {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:fade(@black,70%);
+}
+
+.intro__icon {
+    display: flex;
+}
+
+.icon__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+
+
+    border: 1px solid @black;
+    border-radius: 2px;
+    cursor: pointer;
+
+    &:hover{
+        transform: translateY(-3px);
+    }
+}
+
+.icon_facebook{
+
+    border: 1px solid #3b5998;
+
+    fill:#fff;
+    background-color: #3b5998;
+
+}
+.icon_linkedin{
+    border: 1px solid #0e76a8;
+
+    fill:#fff;
+    background-color: #0e76a8;
+}
+
+.icon_behance{
+    border: 1px solid #053EFF;
+
+    fill:#fff;
+    background-color: #053EFF;
+}
+
+.icon_twitter{
+    border: 1px solid #00acee;
+
+    fill:#fff;
+    background-color: #00acee;
+}
+
+.icon_dribbble{
+    border: 1px solid #EA4C89;
+
+    fill:#fff;
+    background-color: #EA4C89;
+}
+
+.icon{
+    display: block;
+    height: 18px;
+
+
+}
+
+.intro__btn {
+    display: inline-block;
+
+    padding-top: 30px;
+}
+
+.intro_button {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: @black;
+
+    border: 1px solid @grey;
+    border-radius: 20px;
+    padding: 1.2rem 3rem;
+
+    &:hover{
+        transition: background-color 0.3s linear;
+        transition: color 0.3s linear;
+        background-color: @black;
+        color: @white;
+        box-shadow: 2px 2px 10px fade(#000,24%);
+    }
+
+    &:last-child {
+        margin-right: 1rem;
+    }
+}
+
+
+
+
+
+
+
