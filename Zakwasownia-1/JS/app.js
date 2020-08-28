@@ -4,9 +4,14 @@ $(document).ready(function(){
     let scrollPos = $(window).scrollTop();
     let header_fixed = $(".header.fixed");
     let varScrollTop = 0;
+    checkScroll(scrollPos,height);
     $(window).on("scroll load resize",function(){
         scrollPos = $(this).scrollTop();
-        
+        checkScroll(scrollPos,height);
+  });
+    
+    
+    function checkScroll(scrollPos,height){
         if(scrollPos > varScrollTop){
             header_fixed.fadeOut();
             
@@ -15,10 +20,7 @@ $(document).ready(function(){
         }
         
         varScrollTop = scrollPos;
-  });
-    
-    
-    
+    }
     
     let nav = $(".header_menu");
     let navToggle = $("#navToggle");
@@ -33,14 +35,8 @@ $(document).ready(function(){
         
     });
     
-    $('.reviews_slider').slick({
-        infinite: true,//бесконечный скролинг
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-        arrows: false,
-        dots: true
-    });
+  
+
     
     $('.klients_slider').slick({
         infinite: true,//бесконечный скролинг
@@ -50,6 +46,30 @@ $(document).ready(function(){
         arrows: false,
         dots: true
     });
+    
+    $('.reviews_slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    dots: false
+    });
+	
 
+      $('[data-scroll]').on('click',function(event){
+        event.preventDefault();
+        
+        let innerH = $(this).data('scroll');
+        let elementOffset = $(innerH).offset().top;
+        
+        nav.removeClass("show");
+          button_burger.removeClass("show");
+          
+          header_fixed.removeClass("show");
+        $('html ,body').animate({
+            scrollTop: elementOffset+20
+        },700);     
+                
+    });
     
 });
