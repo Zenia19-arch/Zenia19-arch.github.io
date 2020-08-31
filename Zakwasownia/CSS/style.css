@@ -242,6 +242,7 @@ pre{
 /*Intro*/
 .description{
     background-color: #F4F1EE;
+    width: 100%;
 }
 
 .intro{
@@ -277,17 +278,18 @@ pre{
 /*slide_img*/
 .slide_img{
     width: 100%;
-    height: 750px;
+    display: block;
     
     
 }
 .slide{
     width: 100%;
+    display: block;
 }
 
 .images{
     width: 100%;
-    height: 750px;
+    display: block;
 }
 
 .slick-dots{
