@@ -64,6 +64,7 @@ body{
 
 #header.show{
     background-color: #F2D8CC;
+    
 }
 
 
@@ -92,9 +93,7 @@ body{
     font-size: 22px;
 }
 
-.header_menu{
-    background-color: #F2D8CC; 
-}
+
 
 
 .btn_languages{
@@ -137,12 +136,15 @@ body{
     width: 100%;
     position: absolute;
     text-align: end;
+
 }
 
 
-.icon__media{
+.icon.icon__media{
     display: none;
 }
+
+
 
 .icon_facebook,
 .icon_instagram{
@@ -186,21 +188,28 @@ body{
 
 /*------------------------------------*/
 
+.header__menu--media{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+}
 
 .header_menu{
     display: none;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    position: fixed;
+
     right: 0;
     width: 100%;
     height: 100%;
-    background-color: #F2D8CC;
     text-transform: uppercase;  
     padding: 0 80px;
     z-index: 2;
     opacity: 1;
+    position: fixed;
+    background-color: #F2D8CC;
 }
 
 .header_menu.show{
@@ -219,11 +228,10 @@ body{
     font-size: 30px;
     font-weight: 900;  
     background-color: #F2D8CC;
-    border-bottom: 2px solid #000;
     color: #404040;
 }
 
-.qwe{
+.border__link{
     width: 100%;
  
     margin: 0 auto;
@@ -232,7 +240,7 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-
+    border-bottom: 2px solid #000;
     
     display: flex;
 }
@@ -1107,8 +1115,6 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     .description_klients--media{
         
         line-height: 45px;
-        
-        font-size: 26px;
         min-height: 440px;
     }
     
@@ -1116,6 +1122,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
         max-width: 1575px;
         padding: 40px 80px;
         padding-bottom: 60px;
+        font-size: 36px;
         line-height: 80px;
         color: #404040;
     }
@@ -1125,7 +1132,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     }
     
     p{
-        padding-bottom: 60px;
+        padding-bottom: 50px;
     }
     
     .kontakt{
@@ -1198,7 +1205,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     
     .timetable__subtitle{
         width: 100%;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 50px;
     }
     
@@ -1290,17 +1297,31 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
         width: 100px;
         height: 100px;
     }
+
+    .icon.icon__media{
+        
+        display: flex;
+        height: 150px;
+        
+    }
 }
 @media(max-width: 991px){
     .bistro{
-        padding-top: 200px;
+        padding-top: 250px;
     }
+    
+    .witanie{
+        padding-top: 50px;
+        line-height: 120px;
+        font-size: 66px;
+    }
+    
     .icon__rwd{
         display: none;
     }
     
     .header{
-        height: 150px;
+        height: 180px;
     }
     
     .img_zakwasownia{
@@ -1312,9 +1333,10 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     
     .menu__link{
         height: 100px;
-        line-height: 90px;
-        font-size: 40px;
-        border-bottom: 2px solid #000;
+        line-height: 20px;
+        padding-top: 40px;
+        font-size: 50px;
+        
     }
     
     .icon_burger{
@@ -1328,14 +1350,10 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     
     .icon__media{
         width: 100%;
-        height: 100%;
-        
-        text-align: start;
-
         display: flex;
         justify-content: space-between;
         padding-right: 160px;
-        padding-top: 200px;
+        padding-top: 240px;
     }
     
     
@@ -1346,12 +1364,6 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
         height: 50px;
     }
     
-    .menu__link{
-        height: 120px;
-        line-height: 120px;
-        font-size: 50px;
-        border-bottom: 2px solid #000;
-    }
     
 }
 
@@ -1362,7 +1374,7 @@ textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     
     .description_klients--media{
         line-height: 80px;
-
+        font-size: 30px;
         min-height: 500px;
     }
 

@@ -14,6 +14,7 @@ $(document).ready(function(){
         checkScroll(scrollPos,height);
   });
     
+    
     $(window).scroll(function(event) {
         event.preventDefault();
         arrow.addClass("js__arrow");
@@ -43,6 +44,7 @@ $(document).ready(function(){
     }
     
     let nav = $(".header_menu");
+    let icon__media = $(".icon.icon__media");
     let navToggle = $("#navToggle");
     let button_burger = $(".button_burger");
     
@@ -52,14 +54,23 @@ $(document).ready(function(){
         nav.toggleClass("show");
         header.toggleClass("show");
         button_burger.toggleClass("show");
-        
+
     });
     
   
 
     
     $('.klients_slider').slick({
-        infinite: true,//бесконечный скролинг
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        arrows: false,
+        dots: true
+    });
+    
+    $('.klients__slider__rwd').slick({
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
@@ -80,6 +91,7 @@ $(document).ready(function(){
         event.preventDefault();
         
         let innerH = $(this).data('scroll');
+          console.log(innerH);
         let elementOffset = $(innerH).offset().top;
         
         nav.removeClass("show");
