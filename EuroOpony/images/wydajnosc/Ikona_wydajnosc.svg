@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #029939;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="Group_300" data-name="Group 300" transform="translate(-772.004 -411.817)">
+    <rect id="Rectangle_88" data-name="Rectangle 88" class="cls-1" width="72" height="72" transform="translate(772.004 411.817)"/>
+    <path id="Path_191" data-name="Path 191" class="cls-1" d="M813.366,426.8V448.65c0,4.658-3.3,8.433-7.377,8.433h-19.1c-4.074,0-7.377-3.775-7.377-8.433V426.8c0-4.658,3.3-8.435,7.377-8.435h19.1c4.074,0,7.377,3.777,7.377,8.435" transform="translate(11.545 10.071)"/>
+    <path id="Path_192" data-name="Path 192" class="cls-2" d="M813.366,426.8V448.65c0,4.658-3.3,8.433-7.377,8.433h-19.1c-4.074,0-7.377-3.775-7.377-8.433V426.8c0-4.658,3.3-8.435,7.377-8.435h19.1C810.064,418.363,813.366,422.14,813.366,426.8Z" transform="translate(11.545 10.071)"/>
+    <path id="Path_193" data-name="Path 193" class="cls-1" d="M779.546,440.968l8.41,4.4,8.418-4.4,8.42,4.4,8.42-4.4M779.546,431.1l8.41,4.4,8.418-4.4,8.42,4.4,8.42-4.4m-33.668-9.867,8.41,4.4,8.418-4.4,8.42,4.4,8.42-4.4" transform="translate(11.604 14.491)"/>
+    <path id="Path_194" data-name="Path 194" class="cls-2" d="M779.546,440.968l8.41,4.4,8.418-4.4,8.42,4.4,8.42-4.4M779.546,431.1l8.41,4.4,8.418-4.4,8.42,4.4,8.42-4.4m-33.668-9.867,8.41,4.4,8.418-4.4,8.42,4.4,8.42-4.4" transform="translate(11.604 14.491)"/>
+  </g>
+</svg>

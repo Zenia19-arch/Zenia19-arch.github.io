@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.003" height="30" viewBox="0 0 30.003 30">
+  <defs>
+    <style>
+      .sygnet {
+        fill: #00993b;
+      }
+    </style>
+  </defs>
+  <g id="Group_303" data-name="Group 303" transform="translate(-826 -3800)">
+    <path id="Path_65" data-name="Path 65" class="sygnet" d="M271.285,247.129a15,15,0,0,0-24,0Z" transform="translate(581.718 3558.871)"/>
+    <path id="Path_66" data-name="Path 66" class="sygnet" d="M235.981,289.332a15.056,15.056,0,0,0,.3,3h29.4a15.126,15.126,0,0,0,0-6h-29.4a15.058,15.058,0,0,0-.3,3" transform="translate(590.021 3525.667)"/>
+    <path id="Path_67" data-name="Path 67" class="sygnet" d="M247.284,331.537a15,15,0,0,0,24,0Z" transform="translate(581.718 3492.463)"/>
+  </g>
+</svg>
